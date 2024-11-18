@@ -1,0 +1,10 @@
+<div class="anime-list">
+    <h2>Top 5 Meilleure animé noté</h2>
+    <ul>
+      <li *ngFor="let anime of animes" [ngStyle]="{'background-color': anime.backgroundColor}">
+        <h3>{{ anime.title }}</h3>
+        <p>Note: {{ anime.rating }} / 5</p>
+      </li>
+    </ul>
+  </div>
+  
